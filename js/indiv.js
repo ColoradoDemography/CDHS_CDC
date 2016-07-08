@@ -145,8 +145,8 @@ function initOperationalLayer(map) {
         map: map
     }, dojo.byId("search"));
 
-    esri.config.defaults.map.logoLink = "http://dola.colorado.gov/";
-    document.getElementsByClassName('logo-med')[0].style.backgroundImage = "url(\"http://dola.colorado.gov/gis-cms/sites/default/files/gis-images/CO_LOGO.png\")";
+    esri.config.defaults.map.logoLink = "https://dola.colorado.gov/";
+    document.getElementsByClassName('logo-med')[0].style.backgroundImage = "url(\"https://dola.colorado.gov/gis-cms/sites/dola.colorado.gov.gis-cms/files/gis-images/CO_LOGO.png\")";
     document.getElementsByClassName('logo-med')[0].style.backgroundRepeat = "no-repeat";
 
     // start widget
@@ -161,28 +161,28 @@ function initOperationalLayer(map) {
     infoTemplate2.setContent(getText2);
 
 
-    featureLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1014_v2/FeatureServer/0", {
+    featureLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1014_v2/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
         outFields: ["*"],
         infoTemplate: infoTemplate
     });
 
-    featureLayer2 = new esri.layers.FeatureLayer("http://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1014_v2/FeatureServer/0", {
+    featureLayer2 = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1014_v2/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
         outFields: ["*"]
     });
 
-    pointLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/SeniorCenters07082016/FeatureServer/0", {
+    pointLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/SeniorCenters07082016/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
         outFields: ["*"],
         infoTemplate: infoTemplate2
     });
 
-    var countyLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/IamIM3RJ5xHykalK/ArcGIS/rest/services/CountyACSv4/FeatureServer/0", {
+    var countyLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/ArcGIS/rest/services/CountyACSv4/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND
     });
 
-    var placeLayer = new esri.layers.FeatureLayer("http://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/Places2013_Inc/FeatureServer/0", {
+    var placeLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/Places2013_Inc/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND
     });
 
