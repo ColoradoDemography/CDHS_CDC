@@ -161,18 +161,18 @@ function initOperationalLayer(map) {
     infoTemplate2.setContent(getText2);
 
 
-    featureLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1014_v2/FeatureServer/0", {
+    featureLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1115_v2/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
         outFields: ["*"],
         infoTemplate: infoTemplate
     });
 
-    featureLayer2 = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1014_v2/FeatureServer/0", {
+    featureLayer2 = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PovertyComprehensive_1115_v2/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
         outFields: ["*"]
     });
 
-    pointLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/SeniorCenters07082016/FeatureServer/0", {
+    pointLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/SeniorCenter/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
         outFields: ["*"],
         infoTemplate: infoTemplate2
@@ -182,7 +182,7 @@ function initOperationalLayer(map) {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND
     });
 
-    var placeLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/Places2013_Inc/FeatureServer/0", {
+    var placeLayer = new esri.layers.FeatureLayer("https://services.arcgis.com/IamIM3RJ5xHykalK/arcgis/rest/services/PlacesACSv4/FeatureServer/0", {
         mode: esri.layers.FeatureLayer.MODE_ONDEMAND
     });
 
